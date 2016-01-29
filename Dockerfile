@@ -7,3 +7,5 @@ RUN apt-get update -q
 RUN apt-get install -yq postgresql postgresql-contrib postgresql-client
 
 RUN ln -sf /usr/bin/pg_dump /usr/bin/psql /opt/gitlab/embedded/bin/
+
+
