@@ -5,3 +5,5 @@ RUN wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-k
 
 RUN apt-get update -q
 RUN apt-get install -yq postgresql postgresql-contrib postgresql-client
+
+RUN ln -sf /usr/bin/pg_dump /usr/bin/psql /opt/gitlab/embedded/bin/
